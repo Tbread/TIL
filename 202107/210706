@@ -1,0 +1,30 @@
+Spring Validator
+	@Email 이메일형식만 허용
+	@Size 길이제한(min=x,max=y)
+	@NotNull Null문자열이 들어올수없음
+	@Null Null이 들어와야함
+	@Pattern 해당값의 패턴을 정규식으로 표현가능
+
+
+예외처리
+
+	@ExceptionHandler - > 클래스내에서 일어난 예외를 해당 어노테이션으로 처리할수있음
+
+
+
+애플리케이션 실행시 예외가 날땐 가장 아래의 예외부터 확인하기
+
+Spring Security
+	HttpSecurity
+		anonymous() : 인증되지 않은 사용자가 접근가능
+		authenticated() : 인증된 사용자만 접근가능
+		fullyAuthenticated() : 완전히 인증된 사용자만 접근가능
+		hasRole() : 해당권한만을 가진 사용자만 접근가능
+		hasAnyRole() : 해당 권한들중 하나라도 있으면 접근가능
+		hasIpAddress() : 해당 ip주소를 가져야만 접근가능
+		permitAll() : 전부접근가능
+		denyAll() : 전부접근불가
+
+
+
+오늘은 밤샐각오를 하자
